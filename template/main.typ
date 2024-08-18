@@ -3,7 +3,7 @@
 #show: project.with(
   title: "This is the Title",
   subtitle: "This is the Subtitle",
-  // org: "Add your own ord here!",
+  // org: "Add your own org here!",
   // logo: "Add the path to your own logo file here!",
 )
 
