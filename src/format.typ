@@ -1,4 +1,4 @@
-#let project(
+#let report(
   title: "", 
   subtitle: "", 
   org: "Cyclone RoboSub @ UC Davis", 
@@ -9,7 +9,8 @@
   set document(
     author: org, 
     title: title, 
-    keywords: "robotics, robot submarine, RoboSub, engineering")
+    keywords: if org == "Cyclone RoboSub @ UC Davis" {"robotics, robot submarine, RoboSub, engineering"} else {""},
+  )
 
   set text(
     font: "Montserrat",

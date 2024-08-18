@@ -1,9 +1,9 @@
 [package]
-name = "ocean-waves"
+name = "ocean-report-crs"
 version = "0.1.0"
 entrypoint = "src/format.typ"
 authors = ["@jdpieck"]
-license = "GPLv3"
+license = "GPL-3.0"
 description = "Official template for Cyclone RoboSub @ UC Davis. Can me modified for other organizations."
 repository = "https://github.com/Cyclone-Robosub/ocean-waves"
 keywords = ["robosub", "ocean", "waves", "document"]

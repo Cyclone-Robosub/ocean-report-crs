@@ -1,12 +1,12 @@
-# ocean-waves
-This is the official Typst template for Cyclone RoboSub @ UC Davis. The organization and logo name found at the bottom right of the document can be modified to fit other organizations.
+# crs-ocean-waves
+This is the official Typst template for Cyclone RoboSub (CRS) @ UC Davis. The organization and logo name found at the bottom right of the document can be modified to fit other organizations.
 
 ## Usage
 You can use this template in the Typst web app by clicking "Start from template" on the dashboard and searching for `ocean-waves`.
 
 Alternatively, you can use the CLI to kick this project off using the command
-```
-typst init @preview/ocean-waves:0.1.0
+```shell
+typst init @preview/ocean-report-crs:0.1.0
 ```
 
 Typst will create a new directory with all the files needed to get you started.
@@ -21,9 +21,9 @@ Typst will create a new directory with all the files needed to get you started.
 
 ## Example
 ```typst
-#import "@local/ocean-waves:0.1.0": *
+#import "@preview/ocean-report-crs:0.1.0": *
 
-#show: project.with(
+#show: report.with(
   title: "This is the Title",
   subtitle: "This is the Subtitle",
   // org: "Add your own ord here!",

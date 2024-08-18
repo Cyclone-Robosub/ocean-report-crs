@@ -1,6 +1,6 @@
-#import "@local/ocean-waves:0.1.0": *
+#import "@preview/ocean-report-crs:0.1.0": *
 
-#show: project.with(
+#show: report.with(
   title: "This is the Title",
   subtitle: "This is the Subtitle",
   // org: "Add your own org here!",
