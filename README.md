@@ -1,4 +1,4 @@
-# crs-ocean-waves
+# ocean-report-crs
 This is the official Typst template for Cyclone RoboSub (CRS) @ UC Davis. The organization and logo name found at the bottom right of the document can be modified to fit other organizations.
 
 ## Usage
