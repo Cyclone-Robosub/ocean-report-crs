@@ -9,13 +9,18 @@
   set document(
     author: org, 
     title: title, 
-    // date: date, 
     keywords: "robotics, robot submarine, RoboSub, engineering")
 
   set page(
     paper: "us-letter", 
     margin: (bottom: 1.15in),
-    background: image("Newsletter Background6.svg"),
+    background: image("background.svg"),
+    header: {
+      set text(weight: "light", .8em)
+      datetime.today().display("[month]/[day]/[year]")
+      h(1fr)
+      counter(page).display("1")
+    },
     footer: {
       set text(white, .8em, )
       set par(justify: false)
@@ -27,13 +32,7 @@
       )
     },
     footer-descent: 43%,
-    header: {
-      set text(weight: "light", .8em)
-      // set box(fill: white, inset: 4pt, radius: 2pt)
-      box(datetime.today().display("[month]/[day]/[year]"))
-      h(1fr)
-      counter(page).display("1")
-    }
+    
   )
 
   set text(
@@ -49,14 +48,9 @@
   show heading: set text(font: "Prompt")
   show link: it => underline(text(blue, it))
 
-  grid(columns: (1fr, 10%), {
-    text(font: "Righteous", weight: 700, 2.5em, title)
-    v(-1.75em)
-    text(weight: "extralight", 1.5em, subtitle)
-  }, 
-  // image("Cyclcone Propeller Logo CTL.png")
-  )
-  
+  text(font: "Righteous", weight: 700, 2.5em, title)
+  v(-1.75em)
+  text(weight: "extralight", 1.5em, subtitle)
 
   body
   

@@ -3,15 +3,8 @@
 #show: project.with(
   title: "This is the Title",
   subtitle: "This is the Subtitle",
-  // org: "The communiist manifesto",
-  // logo: "Newsletter Background1.svg",
+  // org: "Add your own ord here!",
+  // logo: "Add the path to your own logo file here!",
 )
 
-= Heading
-
-#lorem(100)
-
-== Sub Heading
-#lorem(50)
-
-#lorem(50)
+// Add you connent below to get started!
