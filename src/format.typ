@@ -2,7 +2,7 @@
   title: "", 
   subtitle: "", 
   org: "Cyclone RoboSub @ UC Davis", 
-  logo: "Cyclcone Propeller Logo CWRK.svg", 
+  logo: "Cyclone Propeller Logo CWRK.svg", 
   body
 ) = {
 
@@ -10,6 +10,15 @@
     author: org, 
     title: title, 
     keywords: "robotics, robot submarine, RoboSub, engineering")
+
+  set text(
+    font: "Montserrat",
+    weight: "regular",
+  )
+
+  set par(
+    justify: true
+  )
 
   set page(
     paper: "us-letter", 
@@ -35,19 +44,26 @@
     
   )
 
-  set text(
-    font: "Montserrat"
-  )
-
-  set par(
-    justify: true
-  )
-
   show heading: set text(1.2em)
 
   show heading: set text(font: "Prompt")
   show link: it => underline(text(blue, it))
 
+  // Code Blocks
+  show raw.where(block: false): box.with(
+    fill: luma(240),
+    inset: (x: 3pt, y: 0pt),
+    outset: (y: 3pt),
+    radius: 2pt,
+  )
+
+  show raw.where(block: true): block.with(
+    fill: luma(240),
+    inset: 10pt,
+    radius: 4pt,
+  )
+
+  // Title 
   text(font: "Righteous", weight: 700, 2.5em, title)
   v(-1.75em)
   text(weight: "extralight", 1.5em, subtitle)

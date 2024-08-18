@@ -1,4 +1,4 @@
-#import "/src/format.typ": *
+#import "@local/ocean-waves:0.1.0": *
 
 #show: project.with(
   title: "This is the Title",
@@ -7,4 +7,4 @@
   // logo: "Add the path to your own logo file here!",
 )
 
-// Add you connent below to get started!
+// Add your content below to get started!
