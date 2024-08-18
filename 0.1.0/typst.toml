@@ -5,7 +5,7 @@ entrypoint = "src/format.typ"
 authors = ["@jdpieck"]
 license = "GPL-3.0"
 description = "Official template for Cyclone RoboSub @ UC Davis. Can me modified for other organizations."
-repository = "https://github.com/Cyclone-Robosub/ocean-waves"
+repository = "https://github.com/Cyclone-Robosub/ocean-report-crs"
 keywords = ["robosub", "ocean", "waves", "document"]
 categories = ["report"]
 
