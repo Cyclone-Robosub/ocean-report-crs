@@ -1,12 +1,15 @@
 [package]
 name = "ocean-waves"
 version = "0.1.0"
-entrypoint = "format.typ"
+entrypoint = "src/format.typ"
 authors = ["@jdpieck"]
-license = "GNU GPLv3"
+license = "GPLv3"
 description = "Official template for Cyclone RoboSub @ UC Davis. Can me modified for other organizations."
+repository = "https://github.com/Cyclone-Robosub/ocean-waves"
+keywords = ["robosub", "ocean", "waves", "document"]
+categories = ["report"]
 
 [template]
 path = "template"
-entrypoint = "format.typ"
+entrypoint = "main.typ"
 thumbnail = "thumbnail.png"

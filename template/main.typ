@@ -1,4 +1,4 @@
-#import "format.typ": *
+#import "/src/format.typ": *
 
 #show: project.with(
   title: "This is the Title",
@@ -15,14 +15,3 @@
 #lorem(50)
 
 #lorem(50)
-
-= Heading
-
-#lorem(100)
-
-== Sub Heading
-#lorem(50)
-
-#lorem(50)
-
-#rect(height: 100%, width: 100%)
