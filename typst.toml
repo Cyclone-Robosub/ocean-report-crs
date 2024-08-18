@@ -1,0 +1,12 @@
+[package]
+name = "ocean-waves"
+version = "0.1.0"
+entrypoint = "format.typ"
+authors = ["@jdpieck"]
+license = "GNU GPLv3"
+description = "Official template for Cyclone RoboSub @ UC Davis. Can me modified for other organizations."
+
+[template]
+path = "template"
+entrypoint = "format.typ"
+thumbnail = "thumbnail.png"
