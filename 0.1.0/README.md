@@ -14,10 +14,12 @@ Typst will create a new directory with all the files needed to get you started.
 ## Configuration
 - `title`: The title of your document. 
 - `subtitle`: The subtitle of your document. Can be used to put authors
+- `date`: The date shown in the topic right
+  - By default, this date updates to reflect the current date. Add this parameter with your preferred date to change it. 
 - `org`: Your organization. Affects the document author and text in bottom-right corner. 
-    - By default, this is set to "Cyclone RoboSub @ UC Davis". Simply type in your own organization's name to change it. 
+  - By default, this is set to "Cyclone RoboSub @ UC Davis". Add this parameter with your own organization's name to change it. 
 - `logo`: Path to logo image file. 
-    - By default, this is set to the Cyclone RoboSub logo. Simply type in the path to your own logo image to change it. 
+  - By default, this is set to the Cyclone RoboSub logo.Add this parameter with the path to your own logo image to change it. 
 
 ## Example
 ```typst
@@ -26,14 +28,14 @@ Typst will create a new directory with all the files needed to get you started.
 #show: report.with(
   title: "This is the Title",
   subtitle: "This is the Subtitle",
-  // org: "Add your own ord here!",
+  // date: "Don't want the auto date? Add your own date here!",
+  // org: "Add your own org here!",
   // logo: "Add the path to your own logo file here!",
 )
 
-// Add your content below to get started!
+// Add your content below!
 
 = Heading
-
 #lorem(100)
 
 == Sub Heading
@@ -41,5 +43,4 @@ Typst will create a new directory with all the files needed to get you started.
 ```
 
 ## Future Works
-- Adjust logo placement so that it scales with paper size and margin
 - Add unique table settings

@@ -1,11 +1,14 @@
 #let report(
   title: "", 
   subtitle: "", 
+  date: none,
   org: "Cyclone RoboSub @ UC Davis", 
   logo: "Cyclone Propeller Logo CWRK.svg", 
   body
 ) = {
 
+  if date == none {date = datetime.today().display("[month]/[day]/[year]")}
+  
   set document(
     author: org, 
     title: title, 
@@ -27,7 +30,8 @@
     background: image("background.svg"),
     header: {
       set text(weight: "light", .8em)
-      datetime.today().display("[month]/[day]/[year]")
+      // datetime.today().display("[month]/[day]/[year]")
+      date
       h(1fr)
       counter(page).display("1")
     },
